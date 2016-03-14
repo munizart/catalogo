@@ -3,17 +3,25 @@ var total = JSON.data.widget.size; //# of carousel items
 
 $(document).ready(function() {
     var view = $("#carousel-viewport");
-    var rigth = $("#carousel-control-right"),
-        left = $("#carousel-control-left");
+    var desktopRight = $("#carousel-control-right"),
+        desktopLeft = $("#carousel-control-left"),
+        mobileRight = $("#carousel-control-mobile-right"),
+        mobileLeft = $("#carousel-control-mobile-left");
 
-    rigth.click(function(event) {
-        nextIndex();
-        view.css('transform', 'translateX(' + -10 * index * amountToJump() + '%)');
-    });
-    left.click(function(event) {
+    desktopRight.click(right);
+    mobileRight.click(right);
+    desktopLeft.click(left);
+    mobileLeft.click(left);
+
+    function left(e) {
         prevIndex();
         view.css('transform', 'translateX(' + -10 * index * amountToJump() + '%)');
-    });
+    }
+
+    function right(e) {
+        nextIndex();
+        view.css('transform', 'translateX(' + -10 * index * amountToJump() + '%)');
+    }
 });
 
 function maxIndex() {

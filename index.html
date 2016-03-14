@@ -28,18 +28,26 @@
         <div class="row" id="reference"></div>
         <span class="title">Quem procura este item também se interessa por</span>
         <div class="gallery row">
-            <div class="col s1 center" id="carousel-control-left">
-                <span class="button circle large"><i class="fa fa-chevron-left"></i>
-</span>
+            <div class="col m1 center hide-on-small" id="carousel-control-left">
+                <span class="button circle large"><i class="fa fa-chevron-left"></i></span>
             </div>
-            <div class="col s10">
+            <div class="col s12 m10">
                 <div class="carousel">
                     <div id="carousel-viewport" class="carousel-viewport"></div>
                 </div>
             </div>
-            <div class="col s1 center" id="carousel-control-right">
-                <span class="button circle large"><i class="fa fa-chevron-right"></i>
-</span>
+            <div class="col m1 center hide-on-small" id="carousel-control-right">
+                <span class="button circle large"><i class="fa fa-chevron-right"></i></span>
+            </div>
+            <div class="row">
+            	<div class="col s4 hide-on-med-and-up"></div>
+            	<div class="col s2 hide-on-med-and-up" id="carousel-control-mobile-left">
+            		<span class="button circle large"><i class="fa fa-chevron-left"></i></span>
+            	</div>
+            	<div class="col s1 hide-on-med-and-up"></div>
+            	<div class="col s2 hide-on-med-and-up" id="carousel-control-mobile-right">
+            		<span class="button circle large"><i class="fa fa-chevron-right"></i></span>
+            	</div>
             </div>
         </div>
     </div>
@@ -103,7 +111,7 @@ Comprar</a>
       -->
     <script id="tpl-css" type="text/x-jsrender">
         .carousel-viewport { 
-            width: calc(100% * .5 * {{:count}});
+            width: calc(100% * 1 * {{:count}});
         }
         .carousel .product {
             width: calc({{:percent}}% - 1em);

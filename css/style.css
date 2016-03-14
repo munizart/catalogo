@@ -216,27 +216,28 @@ nav {
     height: auto;
     display: block;
 }
-
+.hide,
 .hide-on-small,
 .hide-on-med-and-down {
-    display: none !important;
+    display: none;
 }
 
-@media screen and (min-width: 601) {
+@media screen and (min-width: 601px) {
     .hide-on-small {
         display: unset !important;
     }
     .hide-on-med-and-up {
+    	background: pink !important;
         display: none !important;
     }
 }
 
 @media screen and (min-width: 901px) {
     /*** Helpers ***/
-    .hide-on-large {
-        display: none !important;
-    }
     .hide-on-med-and-down {
         display: unset !important;
+    }
+    .hide-on-large {
+        display: none !important;
     }
 }
