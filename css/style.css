@@ -159,7 +159,7 @@ nav div a:hover {
 }
 
 .gallery {
-    overflow-x: hidden;
+    height: calc(240px + 1.6rem);
 }
 
 .carousel {
@@ -168,7 +168,7 @@ nav div a:hover {
 }
 
 .carousel .carousel-viewport{
-    transition: all 0.25s ease;
+    transition: all 0.314s cubic-bezier(0.17, 0.84, 0.44, 1) 0s;
 }
 
 .product {
@@ -176,27 +176,14 @@ nav div a:hover {
     margin: 0px 0.5em;
     position: relative;
     height: calc(240px + 1.6rem);
-}
+ }
 
-.chevron {
-    height: calc(240px + 1.6rem);
-    line-height: calc(240px + 1.6rem);
-    position: relative;
-    background-color: rgba(0,0,0,.01);
-    transtion: background .25s ease;
+.center {
+    height: 100%;
 }
-
-.chevron:hover{
-    background-color: rgba(0,0,0,.1);
-}
-
-.chevron span {
-    display: block;
-    margin: 0px auto;
-    position: absolute;
+.center span {
     top: 50%;
-    left: 50%;
-    transform: translateX(-50) translateY(-50%);
+    transform: translateX(-50);
 }
 
 .product .bottom {
