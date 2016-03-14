@@ -40,12 +40,11 @@
                 <span class="button circle large"><i class="fa fa-chevron-right"></i></span>
             </div>
             <div class="row">
-            	<div class="col s4 hide-on-med-and-up"></div>
-            	<div class="col s2 hide-on-med-and-up" id="carousel-control-mobile-left">
+            	<div class="col s2 offset-s4 hide-on-med-and-up" id="carousel-control-mobile-left">
             		<span class="button circle large"><i class="fa fa-chevron-left"></i></span>
             	</div>
-            	<div class="col s1 hide-on-med-and-up"></div>
-            	<div class="col s2 hide-on-med-and-up" id="carousel-control-mobile-right">
+            	<div class="col s8 offset-s1 hide-on-med-and-up"></div>
+            	<div class="col s2 offset-s1 hide-on-med-and-up" id="carousel-control-mobile-right">
             		<span class="button circle large"><i class="fa fa-chevron-right"></i></span>
             	</div>
             </div>
@@ -62,7 +61,7 @@
     <!-- Reference
       -->
     <script id="tpl-reference" type="text/x-jsrender">
-        <div class="col s12 m4 l6">
+        <div class="col s12 l6">
             <div class="image-container">
                 <img src="http://{{:imageName}}">
                 <div class="border-button">
@@ -71,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <div class="col m8 l6">
+        <div class="col s12 l6">
             <p>
                 <span class="title"><a href="http:{{:detailUrl}}">{{:name}}</a></span>
                 <br>
@@ -124,7 +123,7 @@ Comprar</a>
                 width: calc({{:percent}}% - 1em);
             }
         } 
-        @media screen and (min-width: 901px) { 
+        @media screen and (min-width: 1001px) { 
             .carousel-viewport { 
                 width: calc(100% * .25 * {{:count}}); 
             }
@@ -145,3 +144,4 @@ Comprar</a>
 </body>
 
 </html>
+ 

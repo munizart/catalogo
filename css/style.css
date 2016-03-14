@@ -85,8 +85,7 @@ nav div a:hover {
     display: inline-block;
     height: 36px;
     line-height: 36px;
-    outline: 0;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     text-transform: uppercase;
     vertical-align: middle;
     color: #fff;
@@ -219,7 +218,7 @@ nav {
 .hide,
 .hide-on-small,
 .hide-on-med-and-down {
-    display: none;
+    display: none !important;
 }
 
 @media screen and (min-width: 601px) {
